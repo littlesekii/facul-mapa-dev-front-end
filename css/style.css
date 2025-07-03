@@ -110,7 +110,8 @@ body {
 .main {
 
   .banner {
-    min-height: 100dvh;
+    min-height: 600px;
+    height: 100dvh;
     background-image: url("../assets/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -118,11 +119,14 @@ body {
 
     .banner-fog {
       min-height: inherit;
+      height: inherit;
       background-color: #1C1C1CCF;
     }
 
     .banner-container {
       min-height: inherit;
+      height: inherit;
+
       margin: auto;
       max-width: var(--container-max-width);
 
@@ -186,7 +190,8 @@ body {
     }
   }
   .bn-alt {
-    min-height: 75dvh;
+    min-height: 400px;
+    height: 75dvh;
     background-image: url("../assets/bgalt.jpg");
   }
 
@@ -330,7 +335,7 @@ body {
       row-gap: 25px;
 
       .footer-paragraph {
-        text-align: justify;
+        text-align: left;
       }
     }
   }
