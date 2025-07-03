@@ -110,7 +110,7 @@ body {
 .main {
 
   .banner {
-    min-height: 600px;
+    min-height: 750px;
     height: 100dvh;
     background-image: url("../assets/bg.jpg");
     background-repeat: no-repeat;
