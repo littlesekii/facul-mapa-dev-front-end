@@ -1,5 +1,9 @@
+
+/* DEFINIÇÃO DOS IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* DEFINIÇÃO DE CONSTANTES */
 :root {
   --background: #F2F2F2;
   --color-text-black: #2C2C2C;
@@ -11,6 +15,7 @@
   --container-max-width: 1040px;
 }
 
+/* NORMALIZAÇÃO GERAL */
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +27,7 @@ body {
   background-color: var(--background);
 }
 
+/* ESTILIZAÇÃO DO CABEÇALHO */
 .header {
   position: fixed;
   width: 100%;
@@ -107,8 +113,10 @@ body {
   }
 }
 
+/* ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL */
 .main {
 
+  /* ESTILIZAÇÃO DO BANNER */
   .banner {
     min-height: 750px;
     height: 100dvh;
@@ -200,6 +208,7 @@ body {
     background-image: url("../assets/bgalts.jpg");
   }
 
+  /* ESTILIZAÇÃO DA SEÇÃO PRINCIPAL */
   .general {
     padding: 60px 25px;
 
@@ -242,7 +251,7 @@ body {
           margin-top: 10px;
         }
         .general-button {
-          display: inline-block;
+          /* display: inline-block; */
           font-weight: 600;
           color: var(--color-text-hover);
 
@@ -260,67 +269,68 @@ body {
       }
     }
   }
-}
-
-.gn-alt {
-  background-color: #e7d7eb;
-}
-
-.about {
-  padding: 60px 25px;
-
-  .about-container {
-    margin: auto;
-    max-width: var(--container-max-width);
-
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    gap: 50px;
-
-    .about-description {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .about-title {
-        font-weight: 600;
-        font-size: 16pt;
-      }
-      .about-paragraph {
-        margin-top: 10px;
-        font-size: 10pt;
-        line-height: 14pt;
-        font-weight: 300;
-      }
-      .about-image {
-        margin-top: 10px;
-        width: 98%;     
-        border-radius: 10px;   
-      }
-      .about-button {
-        font-weight: 600;
-        color: var(--color-text-hover);
-
-        text-decoration: none;
-      }
-      .about-button:hover {
-        text-decoration: underline;
-      }
-    }
+  .gn-alt {
+    background-color: #e7d7eb;
   }
-  .abc-alt {
-    flex-direction: column;
-    text-align: center;
-  }
-  @media (max-width: 645px) {
+
+  /* ESTILIZAÇÃO DA SEÇÃO SECUNDÁRIA */
+  .about {
+    padding: 60px 25px;
+
     .about-container {
+      margin: auto;
+      max-width: var(--container-max-width);
+
+      display: flex;
+      /* justify-content: center;
+      align-items: center; */
+      gap: 50px;
+
+      .about-description {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about-title {
+          font-weight: 600;
+          font-size: 16pt;
+        }
+        .about-paragraph {
+          margin-top: 10px;
+          font-size: 10pt;
+          line-height: 14pt;
+          font-weight: 300;
+        }
+        .about-image {
+          margin-top: 10px;
+          width: 98%;     
+          border-radius: 10px;   
+        }
+        .about-button {
+          font-weight: 600;
+          color: var(--color-text-hover);
+
+          text-decoration: none;
+        }
+        .about-button:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .abc-alt {
       flex-direction: column;
+      text-align: center;
+    }
+    @media (max-width: 645px) {
+      .about-container {
+        flex-direction: column;
+      }
     }
   }
 }
 
+/* ESTILIZAÇÃO DO RODAPÉ */
 .footer {
   background-color: var(--color-bg-black);
   color: var(--color-text-white);
