@@ -248,6 +248,9 @@ body {
 
           text-decoration: none;
         }
+        .general-button:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -293,7 +296,17 @@ body {
       }
       .about-image {
         margin-top: 10px;
-        width: 98%;        
+        width: 98%;     
+        border-radius: 10px;   
+      }
+      .about-button {
+        font-weight: 600;
+        color: var(--color-text-hover);
+
+        text-decoration: none;
+      }
+      .about-button:hover {
+        text-decoration: underline;
       }
     }
   }
